@@ -6,21 +6,17 @@ This image is available for pulling from the [Docker hub](https://index.docker.i
 
 Launch this container with the following environment variables to suit your situation:
 
-<a name="environment"></a>
 * NEWRELIC_KEY
 * AWS_SECRET_KEY
 * AWS_ACCESS_KEY
 
 These will be used by the agent to connect to your AWS account.
 
-<a name="why"></a>
 ### Why use this container?
 
 This container has everything setup so you can easily run the monitoring agent without having to install everything by hand. It's not much, but still
 Even though it isn't particularly difficult, it can be cumbersome. It also allows to contain all the dependencies inside the container and keep the host clean.
 
-
-<a name="iam"></a>
 ### IAM credentials for correct usage
 
 In order to keep access to your AWS environment as manageable as possible it's advised to create a specific AWS/Newrelic IAM user with
@@ -61,7 +57,6 @@ As mentioned by the plugin authors themselves:
 ```
 * Add the user to the `NewRelicCloudWatch` IAM group.
 
-<a name="running"></a>
 ### Running this container
 
 Running this container is as simple as running the following command:
