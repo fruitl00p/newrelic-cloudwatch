@@ -1,3 +1,8 @@
+###
+#
+# A ubuntu based newrelic-cloudwatch monitoring agent image using the latest official release when built
+#
+###
 FROM ubuntu:14.04
 MAINTAINER Kingsquare <docker@kingsquare.nl>
 
