@@ -13,7 +13,8 @@ WORKDIR /usr/local/newrelic_aws_cloudwatch_plugin-latest
 # App installation: latest version of the newrelic plugin
 # cleanup after by removing dev-stuff, /tmp stuff and just leaving the app
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
+RUN DEBIAN_FRONTEND=noninteractive && \
+	apt-get update && \
 	apt-get install -qy --no-install-recommends build-essential curl ruby-dev libxml2-dev libxslt-dev ruby && \
 	apt-get autoremove --purge && \
 	apt-get clean && \
